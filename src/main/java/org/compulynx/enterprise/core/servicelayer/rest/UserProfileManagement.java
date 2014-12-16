@@ -21,10 +21,10 @@ import org.compulynx.enterprise.core.businesslogiclayer.controllers.profile.User
 public class UserProfileManagement 
 {
     @GET
-    @Path("/locales/get")
+    @Path("/locales/getAll")
     @Consumes("application/json")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getLocales()
+    public Response getAllLocales()
     {  
         UserProfileManager userProfileManager = new UserProfileManager();
         
